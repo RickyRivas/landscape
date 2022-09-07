@@ -64,20 +64,40 @@ export let businessInfo = {
 // 3 main services 
 export let services = [
     {
-        name: 'Service One',
-        description: `Talk about the service with keywords people will be searching for it by. Keep it 1-2
-						sentences.`
+        name: 'Maintenance',
+        description: `Keep your landscape completely flawless without you having to touch a spec of dirt. Our experts know exactly how to keep your surrounding space perfect all year round.`
     },
     {
-        name: 'Service Two',
-        description: `Talk about the service with keywords people will be searching for it by. Keep it 1-2
-						sentences.`
+        name: 'Urban',
+        description: `Add value to your home by crafting the perfect green surroundings, and give your backyard and lawn the renovation they need to draw a smile on your face every time you’re out in the morning.`
     },
     {
-        name: 'Service Three',
-        description: `Talk about the service with keywords people will be searching for it by. Keep it 1-2
-						sentences.`
+        name: 'Gardens',
+        description: `Optimize your soil for growing your own plants, and let us help you enjoy the growing and farming experience with the right plants, fertilizers, and more.`
     },
+]
+// Main services section
+export let mainServices = [
+    {
+        title: 'Design Concept Assistance',
+        description: 'Our 3 decades of experience give us enough knowledge of the science that goes behind landscaping, which is why we can help you make use of the space you have in the most practical, cost-effective, and aesthetically-pleasing way.',
+        iconPath: '/home/planning.svg'
+    },
+    {
+        title: 'Tree, Shrub, And Plant Installation',
+        description: `Whether you need 1 tree installed in your backyard for a new treehouse, or you're looking to surround a large property with plants hand-picked to suit your needs and general theme, Lawncare can guarantee flawless installation on a timeframe you can trust.`,
+        iconPath: '/home/plant.svg'
+    },
+    {
+        title: 'New Grass And Sod Installation',
+        description: `No matter how large or small your lawn is, we can help you cover it completely with high-quality sod sourced from the best suppliers in the country, guaranteeing the exact results you're after, brought to life by our Lawncare professionals.`,
+        iconPath: '/home/plant-pot.svg'
+    },
+    {
+        title: 'Driveways, Patios, And Walkways',
+        description: `If you're looking for pathways, driveways, and walkways that last a lifetime without any cracks, splits, or fading in sight, Lawncare is where you need to be. We help you find the right choices for your needs and carry out the installation process, all without disrupting your day-to-day routine.`,
+        iconPath: '/home/brick-wall.svg'
+    }
 ]
 // Testimonials 
 export let reviews = [

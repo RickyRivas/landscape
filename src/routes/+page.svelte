@@ -1,5 +1,5 @@
 <script>
-	import { businessInfo, services } from './+page';
+	import { businessInfo, mainServices, services } from './+page';
 	import SubFooter from '../lib/header/SubFooter.svelte';
 	import '../styles/pages/home.scss';
 	import '../styles/quick.scss';
@@ -28,20 +28,23 @@
 		</picture>
 		<div class="overlay" />
 		<div class="content">
-			<h1>Main Keywords of What They Do, And Location If Needed</h1>
+			<h1>
+				We Specialize In Creating Outstanding Sceneries For Homeowners And Commercial Purposes.
+			</h1>
 			<p>
-				Talk about the other services they do with keywords and locations where they serve. Try to
-				make this 2-3 lines tall.
+				Armed with world-class equipment and years of experience in the field, we're the go-to
+				experts for landscaping services you can trust. No job is too big or small for our experts,
+				call us today to get started!
 			</p>
 			<div class="btns">
-				<a href="/contact" class="btn">Main Call to Action</a>
+				<a href="/contact" class="btn">Free Consultation</a>
 			</div>
 		</div>
 	</section>
 	<!-- ============================================ -->
 	<!--                 Services                     -->
 	<!-- ============================================ -->
-	<section id="services">
+	<section id="mini-services">
 		<div class="container">
 			{#each services as { name, description }, i}
 				<div class="item">
@@ -81,14 +84,21 @@
 				/>
 			</div>
 			<div class="content">
-				<h2>Trusted home builders for (main city) for over 20 years</h2>
+				<h2>Landscaping Experts With An Eye For Aesthetics And Practicality.</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quae quo, earum a nobis
-					officiis maiores natus hic omnis corrupti minima eius eaque odio, placeat ad vero magnam
+					Based in Tulsa, Oklahoma, Lawncare started as a step up for the landscaping services in
+					the area as a whole. Fast forward to 30 years, and today we stand as one of the
+					highest-rated landscapers in the state, giving every client solutions that fit their needs
+					like a glove
+				</p>
+				<p>
+					Our priorities are efficiency, safety, and quality, if these 3 boxes aren’t checked off,
+					then our work is yet to be completed. We provide you with the best results in record time,
+					giving you a punctual, professional experience with no unwanted downtime or delays!
 				</p>
 				<p class="list-head"><strong>A list if you need it.</strong></p>
 				<ul>
-					{#each { length: 4 } as _}
+					{#each { length: 3 } as _}
 						<li>
 							<img
 								class=""
@@ -106,14 +116,38 @@
 						</li>
 					{/each}
 				</ul>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quae quo, earum a nobis
-					officiis maiores natus hic omnis corrupti minima eius eaque odio, placeat ad vero magnam
-				</p>
 				<div class="btns">
 					<a href="/contact">Contact Us</a>
 				</div>
 			</div>
+		</div>
+	</section>
+	<!-- ============================================ -->
+	<!--                 Services                     -->
+	<!-- ============================================ -->
+	<section id="services">
+		<div class="header">
+			<h2>Residential<br /> Landscaping Services</h2>
+		</div>
+		<div class="container">
+			{#each mainServices as { title, description, iconPath }}
+				<div class="item">
+					<img
+						class=""
+						src={iconPath}
+						alt="icon"
+						width="40"
+						height="40"
+						loading="lazy"
+						decoding="async"
+					/>
+					<h3>{title}</h3>
+					<p>
+						{description}
+					</p>
+					<a class="link" href="/contact">Request Quote</a>
+				</div>
+			{/each}
 		</div>
 	</section>
 	<!-- ============================================ -->
@@ -165,6 +199,118 @@
 					loading="lazy"
 					decoding="async"
 				/>
+			</div>
+		</div>
+	</section>
+	<section id="portfolio">
+		<div class="header">
+			<h2>Some of<br /> Our Latest Projects</h2>
+		</div>
+		<div class="grid">
+			<div class="col">
+				<div class="item">
+					<img
+						class=""
+						src="/portfolio/img01.webp"
+						width=""
+						height=""
+						alt=""
+						loading="lazy"
+						decoding="async"
+					/>
+				</div>
+				<div class="item">
+					<img
+						class=""
+						src="/portfolio/img02.webp"
+						width=""
+						height=""
+						alt=""
+						loading="lazy"
+						decoding="async"
+					/>
+				</div>
+				<div class="item">
+					<img
+						class=""
+						src="/portfolio/img03.webp"
+						width=""
+						height=""
+						alt=""
+						loading="lazy"
+						decoding="async"
+					/>
+				</div>
+			</div>
+			<div class="col">
+				<div class="item">
+					<img
+						class=""
+						src="/portfolio/img02.webp"
+						width=""
+						height=""
+						alt=""
+						loading="lazy"
+						decoding="async"
+					/>
+				</div>
+				<div class="item">
+					<img
+						class=""
+						src="/portfolio/img01.webp"
+						width=""
+						height=""
+						alt=""
+						loading="lazy"
+						decoding="async"
+					/>
+				</div>
+				<div class="item">
+					<img
+						class=""
+						src="/portfolio/img01.webp"
+						width=""
+						height=""
+						alt=""
+						loading="lazy"
+						decoding="async"
+					/>
+				</div>
+			</div>
+			<div class="col">
+				<div class="item">
+					<img
+						class=""
+						src="/portfolio/img01.webp"
+						width=""
+						height=""
+						alt=""
+						loading="lazy"
+						decoding="async"
+					/>
+				</div>
+				<div class="item">
+					<img
+						class=""
+						src="/portfolio/img02.webp"
+						width=""
+						height=""
+						alt=""
+						loading="lazy"
+						decoding="async"
+					/>
+				</div>
+				<div class="item">
+					<img
+						class=""
+						src="/portfolio/img03.webp"
+						width=""
+						height=""
+						alt=""
+						loading="lazy"
+						decoding="async"
+					/>
+				</div>
 			</div>
 		</div>
 	</section>
