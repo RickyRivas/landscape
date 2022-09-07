@@ -1,6 +1,6 @@
 // export const prerender = true;
 export let businessInfo = {
-    companyName: 'Company Name',
+    companyName: 'Tulsa Landscape',
     cityAndState: 'Tulsa, Ok',
     industry: 'Construction',
     phone: '(123)456-7890',
