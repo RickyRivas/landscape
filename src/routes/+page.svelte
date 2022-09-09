@@ -1,5 +1,5 @@
 <script>
-	import { businessInfo, mainServices, services } from './+page';
+	import { businessInfo, mainServices, reasons, services, subReviews } from './+page';
 	import SubFooter from '../lib/header/SubFooter.svelte';
 	import '../styles/pages/home.scss';
 	import '../styles/quick.scss';
@@ -100,15 +100,20 @@
 				<ul>
 					{#each { length: 3 } as _}
 						<li>
-							<img
-								class=""
-								src="/check.svg"
-								alt="checkmark"
-								width="20"
-								height="20"
-								loading="lazy"
-								decoding="async"
-							/>
+							<svg
+								width="25"
+								height="25"
+								viewBox="0 0 683 683"
+								fill="currentcolor"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<g clip-path="url(#clip0_102_2)">
+									<path
+										d="M592.234 86.6666L244.406 409.349L97.3073 252.37L-1.52588e-05 343.552L237.646 597.161L682.667 184.693L592.234 86.6666Z"
+										fill="currentcolor"
+									/>
+								</g>
+							</svg>
 							<span
 								>List item about something, this one is going to two lines so you can see what it
 								looks like</span
@@ -120,34 +125,6 @@
 					<a href="/contact">Contact Us</a>
 				</div>
 			</div>
-		</div>
-	</section>
-	<!-- ============================================ -->
-	<!--                 Services                     -->
-	<!-- ============================================ -->
-	<section id="services">
-		<div class="header">
-			<h2>Residential<br /> Landscaping Services</h2>
-		</div>
-		<div class="container">
-			{#each mainServices as { title, description, iconPath }}
-				<div class="item">
-					<img
-						class=""
-						src={iconPath}
-						alt="icon"
-						width="40"
-						height="40"
-						loading="lazy"
-						decoding="async"
-					/>
-					<h3>{title}</h3>
-					<p>
-						{description}
-					</p>
-					<a class="link" href="/contact">Request Quote</a>
-				</div>
-			{/each}
 		</div>
 	</section>
 	<!-- ============================================ -->
@@ -165,15 +142,21 @@
 				<ul>
 					{#each { length: 4 } as _}
 						<li>
-							<img
-								class=""
-								src="/check.svg"
-								alt="checkmark"
-								width="20"
-								height="20"
-								loading="lazy"
-								decoding="async"
-							/>
+							<svg
+								width="25"
+								height="25"
+								viewBox="0 0 683 683"
+								fill="currentcolor"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<g clip-path="url(#clip0_102_2)">
+									<path
+										d="M592.234 86.6666L244.406 409.349L97.3073 252.37L-1.52588e-05 343.552L237.646 597.161L682.667 184.693L592.234 86.6666Z"
+										fill="currentcolor"
+									/>
+								</g>
+							</svg>
+
 							<span
 								>List item about something, this one is going to two lines so you can see what it
 								looks like</span
@@ -202,6 +185,51 @@
 			</div>
 		</div>
 	</section>
+	<!-- ============================================ -->
+	<!--                 Services                     -->
+	<!-- ============================================ -->
+	<img
+		class="main-img"
+		src="/home/servicemain.jpg"
+		alt="beautiful landscape"
+		width="1920"
+		height="1100"
+		loading="lazy"
+		decoding="async"
+	/>
+	<section id="services">
+		<div class="header">
+			<h2>Residential<br /> Landscaping Services</h2>
+			<p>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem incidunt eius nihil, commodi
+				reiciendis at aperiam voluptatibus fuga doloremque, aspernatur quam, perferendis hic. Iusto
+				iste, sequi mollitia alias ipsa quam.
+			</p>
+		</div>
+		<div class="container">
+			{#each mainServices as { title, description, iconPath }}
+				<div class="item">
+					<img
+						class=""
+						src={iconPath}
+						alt="icon"
+						width="40"
+						height="40"
+						loading="lazy"
+						decoding="async"
+					/>
+					<h3>{title}</h3>
+					<p>
+						{description}
+					</p>
+					<a class="link" href="/contact">Request Quote</a>
+				</div>
+			{/each}
+		</div>
+	</section>
+	<!-- ============================================ -->
+	<!--                 Portfolio                    -->
+	<!-- ============================================ -->
 	<section id="portfolio">
 		<div class="header">
 			<h2>Some of<br /> Our Latest Projects</h2>
@@ -312,6 +340,94 @@
 					/>
 				</div>
 			</div>
+		</div>
+	</section>
+	<!-- ============================================ -->
+	<!--                 Why Choose Us                -->
+	<!-- ============================================ -->
+	<section id="why">
+		<div class="container">
+			<h2>Why Should You <br />Choose Us?</h2>
+			<p>
+				The answer is simple: Experience. We're passionate about what we do, which to our customers
+				means that we bring our A-game to every single project. With Lawncare, you're investing in
+				quality, punctuality, and flawless execution, with landscaping solutions that withstand the
+				test of time.
+			</p>
+			<div class="items">
+				{#each reasons as { title, description }}
+					<div class="item">
+						<div class="circle">
+							<img
+								class=""
+								src="/home/quality.svg"
+								alt="icon"
+								width="25"
+								height="25"
+								loading="lazy"
+								decoding="async"
+							/>
+						</div>
+						<h3>{title}</h3>
+						<p>{description}</p>
+					</div>
+				{/each}
+			</div>
+			<img
+				class="decor"
+				src="/home/img06.webp"
+				alt=""
+				width="500"
+				height="749"
+				loading="lazy"
+				decoding="async"
+				aria-hidden="true"
+			/>
+		</div>
+	</section>
+	<!-- ============================================ -->
+	<!--                 Testimonials                 -->
+	<!-- ============================================ -->
+	<section id="test">
+		<div class="container">
+			<div class="header">
+				<h2>What Our Clients Say</h2>
+			</div>
+			<div class="items">
+				{#each subReviews as { review, testifier }}
+					<div class="item">
+						<div class="stars">
+							{#each { length: 5 } as _}
+								<svg
+									width="30"
+									height="30"
+									viewBox="0 0 30 30"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									aria-hidden="true"
+									role="img"
+								>
+									<path
+										d="M30 11.5908L19.0993 10.8741L14.994 0.560669L10.8888 10.8741L0 11.5908L8.3516 18.6821L5.61105 29.4393L14.994 23.5084L24.3771 29.4393L21.6365 18.6821L30 11.5908Z"
+										fill="currentcolor"
+									/>
+								</svg>
+							{/each}
+						</div>
+						<p>
+							{review}
+						</p>
+						<div class="info">
+							<img src="/reviews/user.svg" alt="testifier" width="40" height="40" />
+							<div>
+								<h4>{testifier}</h4>
+								<p>Homeowner</p>
+							</div>
+						</div>
+					</div>
+				{/each}
+			</div>
+			<a class="btn" href="/testimonials">View All Reviews</a>
 		</div>
 	</section>
 </main>

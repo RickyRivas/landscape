@@ -26,7 +26,23 @@
                 flex-direction: row;
                 align-items: flex-start;
                 font-size: 1.3vw;
-                padding: 7em 0;
+                padding: 8em 0;
+                position: relative;
+
+                // large tree
+                &::before {
+                    content: '';
+                    width: calc(1500/20) * 1em;
+                    height: calc(1500/20) * 1em;
+                    position: absolute;
+                    background: url(/home/tree.png) center / cover no-repeat;
+                    top: 50%;
+                    left: 50%;
+                    margin-left: -30em;
+                    margin-top: -3em;
+                    transform: translate(-50%, -50%);
+                    z-index: -1;
+                }
             }
 
             @media only screen and (min-width: 1200px) {
@@ -79,6 +95,16 @@
                     letter-spacing: .02em;
                     font-weight: bold;
                     line-height: 1;
+
+                    &::after {
+                        content: '';
+                        width: 2em;
+                        background-color: var(--accent-color);
+                        height: 4px;
+                        margin: .5em 0 1em;
+                        display: flex;
+                        flex-direction: column;
+                    }
                 }
 
                 p {
@@ -99,10 +125,12 @@
                         align-items: flex-start;
                         margin: 0 0 .5em;
 
-                        img {
+                        img,
+                        svg {
+                            color: var(--accent-color);
                             margin: .15em .5em 0 0em;
-                            width: 1em;
-                            height: 1em;
+                            width: 1.2em;
+                            height: 1.2em;
                         }
                     }
                 }
@@ -141,9 +169,10 @@
             flex-direction: column;
             width: 100%;
             // 1300px
-            // max-width: 65em;
+            max-width: calc(1300/20) * 1em;
             margin: auto;
             padding: 5em 0;
+            position: relative;
 
             @media only screen and (max-width: 47.975em) {
                 font-size: 1em;
@@ -157,7 +186,23 @@
                 flex-direction: row;
                 align-items: flex-start;
                 font-size: 1.3vw;
-                padding: 7em 0;
+                padding: 8em 0;
+                position: relative;
+
+                // large tree
+                &::before {
+                    content: '';
+                    width: calc(1500/20) * 1em;
+                    height: calc(1500/20) * 1em;
+                    position: absolute;
+                    background: url(/home/tree.png) center / cover no-repeat;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    margin-left: 37em;
+                    margin-top: -2em;
+                    z-index: -1;
+                }
             }
 
             @media only screen and (min-width: 1200px) {
@@ -224,6 +269,16 @@
                     letter-spacing: .02em;
                     font-weight: bold;
                     line-height: 1;
+
+                    &::after {
+                        content: '';
+                        width: 2em;
+                        background-color: var(--accent-color);
+                        height: 4px;
+                        margin: .5em 0 1em;
+                        display: flex;
+                        flex-direction: column;
+                    }
                 }
 
                 p {
@@ -244,10 +299,13 @@
                         align-items: flex-start;
                         margin: 0 0 .5em;
 
-                        img {
+                        img,
+                        svg {
                             margin: .15em .5em 0 0em;
-                            width: 1em;
-                            height: 1em;
+                            width: 1.2em;
+                            height: 1.2em;
+                            color: var(--accent-color);
+                            fill: currentColor;
                         }
                     }
                 }

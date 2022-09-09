@@ -99,6 +99,22 @@ export let mainServices = [
         iconPath: '/home/brick-wall.svg'
     }
 ]
+// Why 
+
+export let reasons = [
+    {
+        title: 'Quality',
+        description: 'An unmatched fit and finish in every detail.'
+    },
+    {
+        title: 'Always On Time',
+        description: 'No delays, inconveniences, or downtime.'
+    },
+    {
+        title: 'Experienced',
+        description: 'We help bring your vision to reality.'
+    },
+]
 // Testimonials 
 export let reviews = [
     {
@@ -126,3 +142,6 @@ export let reviews = [
         review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, molestie dolor ac facilis egestas eget. Viverra pellentesque in nisl porta porttitor auctor ut dignissim.'
     }
 ]
+// home (3) reviews 
+export let subReviews = []
+subReviews.push(reviews[0], reviews[1], reviews[2])
