@@ -645,7 +645,7 @@ var init_page = __esm({
     ];
     reviews = [
       {
-        testifier: "Ricky Rivas",
+        testifier: "RR",
         review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, molestie dolor ac facilis egestas eget. Viverra pellentesque in nisl porta porttitor auctor ut dignissim."
       },
       {
@@ -735,7 +735,7 @@ var init_layout_svelte = __esm({
 					<li><a href="${"tel:" + escape(businessInfo.phone, true)}"><span>Phone:</span> ${escape(businessInfo.phone)}</a></li>
 					<li><a${add_attribute("href", businessInfo.googleLink, 0)}><span>Location:</span> ${escape(businessInfo.fullAddress)}</a></li></ul></div></div></div></footer>
 <div class="${"credit"}"><p>\xA92022 ${escape(businessInfo.companyName)}.<br> Custom coded and designed By
-		<a href="${"/"}">Ricky Rivas</a></p></div>`;
+		<a href="${"/"}">RR</a></p></div>`;
     });
     css = {
       code: ".fixed.svelte-y390hs.svelte-y390hs{position:fixed;bottom:1em;right:0.5em;display:flex;flex-direction:column;z-index:500}.top-link.svelte-y390hs.svelte-y390hs{transition:all 0.25s ease-in-out;cursor:pointer;display:flex;align-items:center;justify-content:center;border-radius:50%;padding:1px;width:2.5rem;height:2.5rem;background:var(--accent-color);border:0;position:relative}.top-link.svelte-y390hs img.svelte-y390hs{width:1em;height:1em;filter:invert(1)}.top-link.hide.svelte-y390hs.svelte-y390hs{visibility:hidden;opacity:0}.top-link.show.svelte-y390hs.svelte-y390hs{visibility:visible;opacity:1}.screen-reader-text.svelte-y390hs.svelte-y390hs{position:absolute;clip-path:inset(50%);margin:-1px;border:0;padding:0;width:1px;height:1px;overflow:hidden;word-wrap:normal !important;clip:rect(1px, 1px, 1px, 1px)}.screen-reader-text.svelte-y390hs.svelte-y390hs:focus{display:block;top:5px;left:5px;z-index:100000;clip-path:none;background-color:#eee;padding:15px 23px 14px;width:auto;height:auto;text-decoration:none;line-height:normal;color:#444;font-size:1em;clip:auto !important}",
@@ -774,8 +774,8 @@ var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     index = 0;
     component = async () => (await Promise.resolve().then(() => (init_layout_svelte(), layout_svelte_exports))).default;
-    file = "_app/immutable/components/pages/_layout.svelte-7a976f45.js";
-    imports = ["_app/immutable/components/pages/_layout.svelte-7a976f45.js", "_app/immutable/chunks/index-8c4849df.js", "_app/immutable/chunks/stores-05b01a6d.js", "_app/immutable/chunks/singletons-8ed36db9.js", "_app/immutable/chunks/_page-006eb137.js"];
+    file = "_app/immutable/components/pages/_layout.svelte-af18b41c.js";
+    imports = ["_app/immutable/components/pages/_layout.svelte-af18b41c.js", "_app/immutable/chunks/index-8c4849df.js", "_app/immutable/chunks/stores-a25c96ec.js", "_app/immutable/chunks/singletons-28e13d77.js", "_app/immutable/chunks/_page-7532cc8a.js"];
     stylesheets = ["_app/immutable/assets/_layout-034dab42.css"];
   }
 });
@@ -820,8 +820,8 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    file2 = "_app/immutable/components/error.svelte-11bc072b.js";
-    imports2 = ["_app/immutable/components/error.svelte-11bc072b.js", "_app/immutable/chunks/index-8c4849df.js", "_app/immutable/chunks/stores-05b01a6d.js", "_app/immutable/chunks/singletons-8ed36db9.js"];
+    file2 = "_app/immutable/components/error.svelte-ba24efdb.js";
+    imports2 = ["_app/immutable/components/error.svelte-ba24efdb.js", "_app/immutable/chunks/index-8c4849df.js", "_app/immutable/chunks/stores-a25c96ec.js", "_app/immutable/chunks/singletons-28e13d77.js"];
     stylesheets2 = [];
   }
 });
@@ -1019,9 +1019,9 @@ var init__3 = __esm({
     init_page();
     index3 = 2;
     component3 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
-    file3 = "_app/immutable/components/pages/_page.svelte-c520bd5e.js";
-    imports3 = ["_app/immutable/components/pages/_page.svelte-c520bd5e.js", "_app/immutable/chunks/index-8c4849df.js", "_app/immutable/chunks/_page-006eb137.js", "_app/immutable/chunks/SubFooter-490270c1.js", "_app/immutable/modules/pages/_page.js-f59cdd42.js", "_app/immutable/chunks/_page-006eb137.js"];
-    stylesheets3 = ["_app/immutable/assets/_page-4721c1d3.css", "_app/immutable/assets/SubFooter-82a995cf.css"];
+    file3 = "_app/immutable/components/pages/_page.svelte-e839a598.js";
+    imports3 = ["_app/immutable/components/pages/_page.svelte-e839a598.js", "_app/immutable/chunks/index-8c4849df.js", "_app/immutable/chunks/_page-7532cc8a.js", "_app/immutable/chunks/SubFooter-490270c1.js", "_app/immutable/modules/pages/_page.js-ce00f10e.js", "_app/immutable/chunks/_page-7532cc8a.js"];
+    stylesheets3 = ["_app/immutable/assets/_page-ddd8d10f.css", "_app/immutable/assets/SubFooter-82a995cf.css"];
   }
 });
 
@@ -1117,8 +1117,8 @@ var init__4 = __esm({
     init_page2();
     index4 = 3;
     component4 = async () => (await Promise.resolve().then(() => (init_page_svelte2(), page_svelte_exports2))).default;
-    file4 = "_app/immutable/components/pages/about/_page.svelte-d394a164.js";
-    imports4 = ["_app/immutable/components/pages/about/_page.svelte-d394a164.js", "_app/immutable/chunks/index-8c4849df.js", "_app/immutable/chunks/_page-006eb137.js", "_app/immutable/chunks/SubFooter-490270c1.js", "_app/immutable/chunks/SubHeader-cccd547f.js", "_app/immutable/modules/pages/about/_page.js-64880ea0.js"];
+    file4 = "_app/immutable/components/pages/about/_page.svelte-e088037d.js";
+    imports4 = ["_app/immutable/components/pages/about/_page.svelte-e088037d.js", "_app/immutable/chunks/index-8c4849df.js", "_app/immutable/chunks/_page-7532cc8a.js", "_app/immutable/chunks/SubFooter-490270c1.js", "_app/immutable/chunks/SubHeader-cccd547f.js", "_app/immutable/modules/pages/about/_page.js-64880ea0.js"];
     stylesheets4 = ["_app/immutable/assets/_page-5988facb.css", "_app/immutable/assets/SubFooter-82a995cf.css", "_app/immutable/assets/SubHeader-fb13526b.css"];
   }
 });
@@ -1191,8 +1191,8 @@ var init__5 = __esm({
     init_page3();
     index5 = 4;
     component5 = async () => (await Promise.resolve().then(() => (init_page_svelte3(), page_svelte_exports3))).default;
-    file5 = "_app/immutable/components/pages/contact/_page.svelte-4f84817f.js";
-    imports5 = ["_app/immutable/components/pages/contact/_page.svelte-4f84817f.js", "_app/immutable/chunks/index-8c4849df.js", "_app/immutable/chunks/_page-006eb137.js", "_app/immutable/chunks/SubHeader-cccd547f.js", "_app/immutable/modules/pages/contact/_page.js-3b1d8c82.js"];
+    file5 = "_app/immutable/components/pages/contact/_page.svelte-dd25d75d.js";
+    imports5 = ["_app/immutable/components/pages/contact/_page.svelte-dd25d75d.js", "_app/immutable/chunks/index-8c4849df.js", "_app/immutable/chunks/_page-7532cc8a.js", "_app/immutable/chunks/SubHeader-cccd547f.js", "_app/immutable/modules/pages/contact/_page.js-3b1d8c82.js"];
     stylesheets5 = ["_app/immutable/assets/_page-9ca8c39e.css", "_app/immutable/assets/SubHeader-fb13526b.css"];
   }
 });
@@ -1251,8 +1251,8 @@ var init__6 = __esm({
     init_page4();
     index6 = 5;
     component6 = async () => (await Promise.resolve().then(() => (init_page_svelte4(), page_svelte_exports4))).default;
-    file6 = "_app/immutable/components/pages/portfolio/_page.svelte-344aa8de.js";
-    imports6 = ["_app/immutable/components/pages/portfolio/_page.svelte-344aa8de.js", "_app/immutable/chunks/index-8c4849df.js", "_app/immutable/chunks/_page-006eb137.js", "_app/immutable/chunks/SubFooter-490270c1.js", "_app/immutable/chunks/SubHeader-cccd547f.js", "_app/immutable/modules/pages/portfolio/_page.js-bfdc5dc5.js"];
+    file6 = "_app/immutable/components/pages/portfolio/_page.svelte-42211cd2.js";
+    imports6 = ["_app/immutable/components/pages/portfolio/_page.svelte-42211cd2.js", "_app/immutable/chunks/index-8c4849df.js", "_app/immutable/chunks/_page-7532cc8a.js", "_app/immutable/chunks/SubFooter-490270c1.js", "_app/immutable/chunks/SubHeader-cccd547f.js", "_app/immutable/modules/pages/portfolio/_page.js-bfdc5dc5.js"];
     stylesheets6 = ["_app/immutable/assets/_page-7b6ef292.css", "_app/immutable/assets/SubFooter-82a995cf.css", "_app/immutable/assets/SubHeader-fb13526b.css"];
   }
 });
@@ -1313,8 +1313,8 @@ var init__7 = __esm({
     init_page5();
     index7 = 6;
     component7 = async () => (await Promise.resolve().then(() => (init_page_svelte5(), page_svelte_exports5))).default;
-    file7 = "_app/immutable/components/pages/testimonials/_page.svelte-fabe4ad9.js";
-    imports7 = ["_app/immutable/components/pages/testimonials/_page.svelte-fabe4ad9.js", "_app/immutable/chunks/index-8c4849df.js", "_app/immutable/chunks/_page-006eb137.js", "_app/immutable/chunks/SubFooter-490270c1.js", "_app/immutable/chunks/SubHeader-cccd547f.js", "_app/immutable/modules/pages/testimonials/_page.js-6ba93edd.js"];
+    file7 = "_app/immutable/components/pages/testimonials/_page.svelte-3d8c4439.js";
+    imports7 = ["_app/immutable/components/pages/testimonials/_page.svelte-3d8c4439.js", "_app/immutable/chunks/index-8c4849df.js", "_app/immutable/chunks/_page-7532cc8a.js", "_app/immutable/chunks/SubFooter-490270c1.js", "_app/immutable/chunks/SubHeader-cccd547f.js", "_app/immutable/modules/pages/testimonials/_page.js-6ba93edd.js"];
     stylesheets7 = ["_app/immutable/assets/_page-a6567f91.css", "_app/immutable/assets/SubFooter-82a995cf.css", "_app/immutable/assets/SubHeader-fb13526b.css"];
   }
 });
@@ -3585,7 +3585,7 @@ function set_paths(paths) {
   base = paths.base;
   assets = paths.assets || base;
 }
-var app_template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n\n<head>\n	<meta charset="utf-8" />\n	<link rel="icon" href="' + assets2 + '/favicon.png" />\n	<meta name="viewport" content="width=device-width" />\n\n	<!-- Business -->\n	<link rel="canonical" href="https://www.company.com">\n	<meta name="description" content="">\n	<meta name="keywords" content="">\n\n	<!--Social Media Display-->\n	<meta property="og:title" content="" />\n	<meta property="og:description" content="Rivas Web Designs Starter" />\n	<meta property="og:type" content="website" />\n	<meta property="og:url" content="" />\n	<meta property="og:image" content="/images/social.jpg" />\n	<meta property="og:image:secure_url" content="/images/social.jpg" />\n\n	<!--Favicons-->\n	<!-- https://realfavicongenerator.net/ -->\n	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">\n	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">\n	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">\n	<link rel="manifest" href="/site.webmanifest">\n	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">\n	<meta name="msapplication-TileColor" content="#da532c">\n	<meta name="theme-color" content="#ffffff">\n	<!-- Fonts -->\n	<link rel="preconnect" href="https://fonts.googleapis.com">\n	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"\n		rel="stylesheet">\n\n	' + head + "\n</head>\n\n<body>\n	" + body + "\n</body>\n\n</html>";
+var app_template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n\n<head>\n	<meta charset="utf-8" />\n	<link rel="icon" href="' + assets2 + '/favicon.png" />\n	<meta name="viewport" content="width=device-width" />\n\n	<!-- Business -->\n	<link rel="canonical" href="https://www.company.com">\n	<meta name="description" content="">\n	<meta name="keywords" content="">\n\n	<!--Social Media Display-->\n	<meta property="og:title" content="" />\n	<meta property="og:description" content="Rivas Web Designs Starter" />\n	<meta property="og:type" content="website" />\n	<meta property="og:url" content="" />\n	<meta property="og:image" content="/images/social.jpg" />\n	<meta property="og:image:secure_url" content="/images/social.jpg" />\n\n	<!--Favicons-->\n	<!-- https://realfavicongenerator.net/ -->\n	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">\n	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">\n	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">\n	<link rel="manifest" href="/site.webmanifest">\n	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">\n	<meta name="msapplication-TileColor" content="#da532c">\n	<meta name="theme-color" content="#ffffff">\n	<!-- Fonts -->\n	<link rel="preconnect" href="https://fonts.googleapis.com">\n	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"\n		rel="stylesheet">\n	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer><\/script>\n	<script defer>\n		if (window.netlifyIdentity) {\n			window.netlifyIdentity.on("init", user => {\n				if (!user) {\n					window.netlifyIdentity.on("login", () => {\n						document.location.href = "/admin/";\n					});\n				}\n			});\n		}\n	<\/script>\n	' + head + "\n</head>\n\n<body>\n	" + body + "\n</body>\n\n</html>";
 var error_template = ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -3692,10 +3692,10 @@ var Server = class {
 // .svelte-kit/netlify-tmp/manifest.js
 var manifest = {
   appDir: "_app",
-  assets: /* @__PURE__ */ new Set([".DS_Store", "about/grass.svg", "about/owner.jpg", "about/owner.webp", "android-chrome-192x192.png", "apple-touch-icon.png", "browserconfig.xml", "check.svg", "contact/emailg.svg", "contact/locationg.svg", "contact/phone-callg.svg", "down-chevron.svg", "favicon-16x16.png", "favicon-32x32.png", "favicon.ico", "favicon.png", "home/.DS_Store", "home/01.svg", "home/02.svg", "home/03.svg", "home/about.webp", "home/brick-wall.svg", "home/grass.png", "home/grasspseudo.png", "home/img02.jpeg", "home/img02.webp", "home/img02m.webp", "home/img06.webp", "home/img10.jpg", "home/leaf.png", "home/planning.svg", "home/plant-pot.svg", "home/plant.svg", "home/quality.svg", "home/servicemain.jpg", "home/tree-small.png", "home/tree.png", "img08l.webp", "img08m.webp", "mstile-150x150.png", "portfolio/img01.webp", "portfolio/img02.webp", "portfolio/img03.webp", "portfolio/img05M.webp", "portfolio/img07.webp", "portfolio/img11.webp", "reviews/star.svg", "reviews/user.svg", "robots.txt", "safari-pinned-tab.svg", "site.webmanifest", "social/facebook.svg", "social/google.svg", "social/instagram.svg", "social/tiktok.svg", "social/twitter.svg", "social/youtube.svg", "subfooter/subfooter.webp", "twig.png", "up-chevron.svg"]),
-  mimeTypes: { ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".webp": "image/webp", ".png": "image/png", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".jpeg": "image/jpeg", ".txt": "text/plain", ".webmanifest": "application/manifest+json" },
+  assets: /* @__PURE__ */ new Set([".DS_Store", "about/grass.svg", "about/owner.jpg", "about/owner.webp", "admin/config.yml", "admin/index.html", "android-chrome-192x192.png", "apple-touch-icon.png", "browserconfig.xml", "check.svg", "contact/emailg.svg", "contact/locationg.svg", "contact/phone-callg.svg", "down-chevron.svg", "favicon-16x16.png", "favicon-32x32.png", "favicon.ico", "favicon.png", "home/.DS_Store", "home/01.svg", "home/02.svg", "home/03.svg", "home/about.webp", "home/brick-wall.svg", "home/grass.png", "home/grasspseudo.png", "home/img02.jpeg", "home/img02.webp", "home/img02m.webp", "home/img06.webp", "home/img10.jpg", "home/leaf.png", "home/planning.svg", "home/plant-pot.svg", "home/plant.svg", "home/quality.svg", "home/servicemain.jpg", "home/tree-small.png", "home/tree.png", "img08l.webp", "img08m.webp", "mstile-150x150.png", "portfolio/img01.webp", "portfolio/img02.webp", "portfolio/img03.webp", "portfolio/img05M.webp", "portfolio/img07.webp", "portfolio/img11.webp", "reviews/star.svg", "reviews/user.svg", "robots.txt", "safari-pinned-tab.svg", "site.webmanifest", "social/facebook.svg", "social/google.svg", "social/instagram.svg", "social/tiktok.svg", "social/twitter.svg", "social/youtube.svg", "subfooter/subfooter.webp", "twig.png", "up-chevron.svg"]),
+  mimeTypes: { ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".webp": "image/webp", ".yml": "text/yaml", ".html": "text/html", ".png": "image/png", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".jpeg": "image/jpeg", ".txt": "text/plain", ".webmanifest": "application/manifest+json" },
   _: {
-    entry: { "file": "_app/immutable/start-8c072510.js", "imports": ["_app/immutable/start-8c072510.js", "_app/immutable/chunks/index-8c4849df.js", "_app/immutable/chunks/singletons-8ed36db9.js"], "stylesheets": [] },
+    entry: { "file": "_app/immutable/start-db77432c.js", "imports": ["_app/immutable/start-db77432c.js", "_app/immutable/chunks/index-8c4849df.js", "_app/immutable/chunks/singletons-28e13d77.js"], "stylesheets": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
