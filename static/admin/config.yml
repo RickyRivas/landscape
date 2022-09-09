@@ -1,6 +1,8 @@
 backend:
   name: git-gateway
   branch: main
+media_folder: "static/uploads"
+public_folder: "/uploads"
 collections:
   - name: routes
     label: routes
@@ -10,5 +12,3 @@ collections:
       - name: title
       - name: nav_label
       - name: body
-media_folder: "static/uploads"
-public_folder: "/uploads"
