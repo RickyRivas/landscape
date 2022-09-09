@@ -98,6 +98,6 @@
 <div class="credit">
 	<p>
 		©2022 {businessInfo.companyName}.<br /> Custom coded and designed By
-		<a href="/">Ricky Rivas</a>
+		<a href="/">RR</a>
 	</p>
 </div>

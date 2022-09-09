@@ -118,7 +118,7 @@ export let reasons = [
 // Testimonials 
 export let reviews = [
     {
-        testifier: 'Ricky Rivas',
+        testifier: 'RR',
         review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, molestie dolor ac facilis egestas eget. Viverra pellentesque in nisl porta porttitor auctor ut dignissim.'
     },
     {
