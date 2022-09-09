@@ -96,7 +96,7 @@
 					then our work is yet to be completed. We provide you with the best results in record time,
 					giving you a punctual, professional experience with no unwanted downtime or delays!
 				</p>
-				<p class="list-head"><strong>A list if you need it.</strong></p>
+				<p class="list-head"><strong>Lorem ipsum dolor sit.</strong></p>
 				<ul>
 					{#each { length: 3 } as _}
 						<li>
@@ -115,14 +115,14 @@
 								</g>
 							</svg>
 							<span
-								>List item about something, this one is going to two lines so you can see what it
-								looks like</span
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente non eligendi
+								facilis ipsa.</span
 							>
 						</li>
 					{/each}
 				</ul>
 				<div class="btns">
-					<a href="/contact">Contact Us</a>
+					<a class="btn" href="/contact">Contact Us</a>
 				</div>
 			</div>
 		</div>
@@ -133,12 +133,12 @@
 	<section id="layout02">
 		<div class="container">
 			<div class="content">
-				<h2>Trusted home builders for (main city) for over 20 years</h2>
+				<h2>Trusted Landscapers for Tulsa for over 20 years</h2>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quae quo, earum a nobis
 					officiis maiores natus hic omnis corrupti minima eius eaque odio, placeat ad vero magnam
 				</p>
-				<p class="list-head"><strong>A list if you need it.</strong></p>
+				<p class="list-head"><strong>Lorem ipsum dolor sit amet.</strong></p>
 				<ul>
 					{#each { length: 4 } as _}
 						<li>
@@ -158,8 +158,7 @@
 							</svg>
 
 							<span
-								>List item about something, this one is going to two lines so you can see what it
-								looks like</span
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquid qui quasi!</span
 							>
 						</li>
 					{/each}
@@ -169,7 +168,7 @@
 					officiis maiores natus hic omnis corrupti minima eius eaque odio, placeat ad vero magnam
 				</p>
 				<div class="btns">
-					<a href="/contact">Contact Us</a>
+					<a href="/contact" class="btn">Contact Us</a>
 				</div>
 			</div>
 			<div class="img-container">
@@ -225,6 +224,49 @@
 					<a class="link" href="/contact">Request Quote</a>
 				</div>
 			{/each}
+		</div>
+	</section>
+	<!-- ============================================ -->
+	<!--                 Why Choose Us                -->
+	<!-- ============================================ -->
+	<section id="why">
+		<div class="container">
+			<h2>Why Should You <br />Choose Us?</h2>
+			<p>
+				The answer is simple: Experience. We're passionate about what we do, which to our customers
+				means that we bring our A-game to every single project. With Lawncare, you're investing in
+				quality, punctuality, and flawless execution, with landscaping solutions that withstand the
+				test of time.
+			</p>
+			<div class="items">
+				{#each reasons as { title, description }}
+					<div class="item">
+						<div class="circle">
+							<img
+								class=""
+								src="/home/quality.svg"
+								alt="icon"
+								width="25"
+								height="25"
+								loading="lazy"
+								decoding="async"
+							/>
+						</div>
+						<h3>{title}</h3>
+						<p>{description}</p>
+					</div>
+				{/each}
+			</div>
+			<img
+				class="decor"
+				src="/home/img06.webp"
+				alt=""
+				width="500"
+				height="749"
+				loading="lazy"
+				decoding="async"
+				aria-hidden="true"
+			/>
 		</div>
 	</section>
 	<!-- ============================================ -->
@@ -343,48 +385,35 @@
 		</div>
 	</section>
 	<!-- ============================================ -->
-	<!--                 Why Choose Us                -->
+	<!--                 misc                          -->
 	<!-- ============================================ -->
-	<section id="why">
+	<div id="misc">
 		<div class="container">
-			<h2>Why Should You <br />Choose Us?</h2>
-			<p>
-				The answer is simple: Experience. We're passionate about what we do, which to our customers
-				means that we bring our A-game to every single project. With Lawncare, you're investing in
-				quality, punctuality, and flawless execution, with landscaping solutions that withstand the
-				test of time.
-			</p>
-			<div class="items">
-				{#each reasons as { title, description }}
-					<div class="item">
-						<div class="circle">
-							<img
-								class=""
-								src="/home/quality.svg"
-								alt="icon"
-								width="25"
-								height="25"
-								loading="lazy"
-								decoding="async"
-							/>
-						</div>
-						<h3>{title}</h3>
-						<p>{description}</p>
-					</div>
-				{/each}
+			<div class="item">
+				<h2>
+					<span>30</span> Years
+				</h2>
+				<p>Experienced professionals who know how to build long-lasting landscaping solutions.</p>
 			</div>
-			<img
-				class="decor"
-				src="/home/img06.webp"
-				alt=""
-				width="500"
-				height="749"
-				loading="lazy"
-				decoding="async"
-				aria-hidden="true"
-			/>
+			<div class="item">
+				<h2>
+					<span>Local</span> Business
+				</h2>
+				<p>
+					Lawncare has been trusted and highly rated in the state for years, and for good reason.
+				</p>
+			</div>
+			<div class="item">
+				<h2>
+					<span>15</span> Workers
+				</h2>
+				<p>
+					No job is too big or small for Lawncare. No matter your needs, we can cover them
+					flawlessly
+				</p>
+			</div>
 		</div>
-	</section>
+	</div>
 	<!-- ============================================ -->
 	<!--                 Testimonials                 -->
 	<!-- ============================================ -->

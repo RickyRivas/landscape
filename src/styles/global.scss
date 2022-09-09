@@ -28,6 +28,10 @@ html {
     @media screen and (min-width: 64em) {
         overflow-y: scroll;
     }
+
+    @media screen and (min-width: 2000px) {
+        font-size: 1vw;
+    }
 }
 
 body {

@@ -28,7 +28,7 @@ main#home {
 
         @media only screen and (min-width: 64em) {
             font-size: inherit;
-            min-height: 768px;
+            min-height: calc(768/20) * 1em;
         }
 
         .content {
@@ -346,20 +346,21 @@ main#home {
                     margin: 0;
                     padding: 1em 1em 1em;
                     min-height: 18em;
+
+                    // circle 
+                    &::after {
+                        content: '';
+                        width: calc(155/20) * 1em;
+                        height: calc(155/20) * 1em;
+                        top: -2.3em;
+                        left: -2.3em;
+                        position: absolute;
+                        background-color: var(--accent-color);
+                        border-radius: 50%;
+                        z-index: -1;
+                    }
                 }
 
-                // circle 
-                &::after {
-                    content: '';
-                    width: calc(155/20) * 1em;
-                    height: calc(155/20) * 1em;
-                    top: -2.3em;
-                    left: -2.3em;
-                    position: absolute;
-                    background-color: var(--accent-color);
-                    border-radius: 50%;
-                    z-index: -1;
-                }
 
                 // grass effect
                 &::before {
@@ -441,6 +442,21 @@ main#home {
 
     #portfolio {
         padding-top: 3em;
+        background-color: #eaefe4;
+        padding-bottom: 9em;
+        position: relative;
+
+        @media only screen and (min-width: 64em) {
+            &::before {
+                content: '';
+                width: 100%;
+                height: calc(97/20) * 1em;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: url(/home/grasspseudo.png) center / contain repeat;
+            }
+        }
 
         .header {
             h2 {
@@ -467,9 +483,11 @@ main#home {
             max-width: 1200px;
             margin: auto;
             padding: 0em 0 3em;
+            position: relative;
+            z-index: 1;
 
             @media only screen and (max-width: 47.975em) {
-                font-size: 1.8vw;
+                font-size: 1.7vw;
                 /* mintab 480w */
             }
 
@@ -479,7 +497,7 @@ main#home {
             }
 
             @media only screen and (min-width: 1200px) {
-                font-size: 1.1em;
+                font-size: 1em;
             }
 
             .col {
@@ -487,6 +505,7 @@ main#home {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                position: relative;
 
                 .item {
                     width: $base-length;
@@ -551,6 +570,50 @@ main#home {
                         }
                     }
                 }
+
+                // decor
+                &:nth-child(1) {
+                    position: relative;
+
+                    @media only screen and (min-width: 64em) {
+                        &::before {
+                            content: '';
+                            font-size: 1em;
+                            width: calc(150/20) * 1em;
+                            height: calc(236/20) * 1em;
+                            position: absolute;
+                            top: 12em;
+                            left: -3em;
+                            background: url(/home/leaf.png) center / cover no-repeat;
+                            z-index: 10;
+                            display: block;
+                            z-index: 1;
+                        }
+                    }
+
+                }
+
+                &:nth-child(3) {
+                    position: relative;
+
+                    @media only screen and (min-width: 64em) {
+                        &::before {
+                            content: '';
+                            font-size: 1em;
+                            width: calc(150/20) * 1em;
+                            height: calc(236/20) * 1em;
+                            position: absolute;
+                            bottom: 15em;
+                            right: -2em;
+                            background: url(/home/leaf.png) center / cover no-repeat;
+                            z-index: 10;
+                            display: block;
+                            z-index: 1;
+                            transform: scaleX(-1);
+                        }
+                    }
+
+                }
             }
         }
     }
@@ -560,7 +623,6 @@ main#home {
     /* ============================================ */
     #why {
         display: block;
-        background-color: #eaefe4;
 
         .container {
             display: flex;
@@ -712,6 +774,81 @@ main#home {
     }
 
     /* ============================================ */
+    /*               misc 3 pts                     */
+    /* ============================================ */
+    #misc {
+        display: block;
+        width: 100%;
+        max-width: calc(1300/20) * 1em;
+        margin: auto;
+        padding: 5em 2em;
+        background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(./home/img10.jpg) center / cover no-repeat;
+        margin-top: -8em;
+        position: relative;
+
+        @media only screen and (min-width: 64em) {
+            &::before {
+                content: '';
+                border-left: calc(40/20)*1em solid transparent;
+                border-right: calc(40/20)*1em solid transparent;
+                transform: rotate(-45deg);
+                border-bottom: calc(40/20)*1em solid #eaefe4;
+                position: absolute;
+                top: -.3em;
+                left: -1.3em;
+                pointer-events: none;
+            }
+
+            &::after {
+                content: '';
+                border-left: calc(40/20)*1em solid transparent;
+                border-right: calc(40/20)*1em solid transparent;
+                transform: rotate(135deg);
+                border-bottom: calc(40/20)*1em solid #fff;
+                position: absolute;
+                bottom: -.3em;
+                right: -1.3em;
+                pointer-events: none;
+            }
+        }
+
+        @media only screen and (min-width: 1300px) {
+            background-attachment: fixed;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 2em;
+
+            @media only screen and (min-width: 768px) {
+                flex-direction: row;
+            }
+
+            @media only screen and (min-width: 1300px) {
+                background-attachment: fixed;
+            }
+
+            .item {
+                h2 {
+                    color: white;
+                    margin-bottom: .5em;
+
+                    span {
+                        font-size: 1.5em;
+                    }
+                }
+
+                p {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    /* ============================================ */
     /*               Home Testimonies               */
     /* ============================================ */
     section#test {
@@ -725,7 +862,7 @@ main#home {
             width: 100%;
             max-width: calc(1350/20) * 1em;
             margin: auto;
-            padding: 3em 1em;
+            padding: 5em 1em 3em;
             position: relative;
 
             h2 {
