@@ -1,4 +1,4 @@
-// export const prerender = true;
+export const prerender = true;
 export let businessInfo = {
     companyName: 'Tulsa Landscape',
     cityAndState: 'Tulsa, Ok',
