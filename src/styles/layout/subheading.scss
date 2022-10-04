@@ -5,6 +5,7 @@
 	    align-items: flex-end;
 	    padding-bottom: 3rem;
 	    position: relative;
+	    background: url(/img08m.webp) center / cover no-repeat;
 
 	    h1 {
 	        font-size: 2em;
@@ -58,9 +59,11 @@
 	    }
 	}
 
-	@media (min-width: 1200px) {
+	@media (min-width: 1024px) {
 	    #subheader {
-	        height: 18rem;
+	        height: 20rem;
 	        // background-attachment: fixed;
+	        background: url(/img08l.webp) center / cover no-repeat;
+
 	    }
 	}
