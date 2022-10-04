@@ -1,45 +1,57 @@
-$long-height: 23em;
+$long-height: calc(615/20)*1em;
 $base-length: 17em;
+
 $margin: .5em;
 
 main#portfolio {
     .grid {
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
+        flex-direction: column;
         width: 100%;
-        max-width: 1200px;
+        max-width: calc(1240/20)*1em;
         margin: auto;
         padding: 3em 0;
 
         @media only screen and (max-width: 47.975em) {
-            font-size: 1.8vw;
+            font-size: 2vw;
             /* mintab 480w */
         }
 
         @media only screen and (min-width: 48em) {
-            font-size: 1.7vw;
+            font-size: 1.5vw;
             /* mintab 480w */
         }
 
-        @media only screen and (min-width: 1200px) {
-            font-size: 1.1em;
+        @media only screen and (min-width: 64em) {
+            font-size: inherit;
         }
 
         .col {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+            width: 100%;
+            margin-bottom: 1.4em;
 
-            .item {
-                width: $base-length;
+            @media only screen and (max-width: 47.975em) {
+                flex-direction: column;
+            }
+
+            &>.item {
+                width: calc(820/20)*1em;
+                height: $long-height;
                 background-color: #000;
-                margin: $margin;
+                // margin: $margin;
                 transition: all .5s;
                 position: relative;
-                border-radius: .1em;
                 overflow: hidden;
+                cursor: pointer;
+
+                @media only screen and (max-width: 47.975em) {
+                    margin-bottom: 1.5em;
+                }
 
                 img {
                     position: absolute;
@@ -59,45 +71,64 @@ main#portfolio {
                     z-index: 1;
                     opacity: 0;
                     transition: all .5s;
+                    pointer-events: none;
                 }
 
-                // &:hover {
-                //     &::before {
-                //         opacity: 1;
-                //     }
-                // }
             }
 
-            &:nth-child(1),
-            &:nth-child(3) {
-                .item {
+            .flex {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: $long-height;
 
-                    &:nth-child(1),
-                    &:nth-child(3) {
-                        height: $base-length;
+                @media only screen and (max-width: 47.975em) {
+                    flex-direction: row;
+                    height: auto;
+                    width: 82%;
+                }
+
+                .item {
+                    margin: 0;
+                    width: calc(395/20)*1em;
+                    height: calc(295/20)*1em;
+                    background-color: #000;
+                    transition: all .5s;
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+
+                    img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
                     }
 
-                    &:nth-child(2) {
-                        height: $long-height;
+                    &::before {
+                        content: '';
+                        background-color: rgba(0, 0, 0, .5);
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        z-index: 1;
+                        opacity: 0;
+                        transition: all .5s;
+                        pointer-events: none;
                     }
                 }
             }
 
             &:nth-child(2) {
-
-                .item {
-
-                    &:nth-child(2) {
-                        height: $base-length;
+                @media only screen and (max-width: 47.975em) {
+                    &>.item {
+                        order: 1;
                     }
 
-                    &:nth-child(1),
-                    &:nth-child(3) {
-                        height: $long-height;
-                    }
-
-                    &:nth-child(1) {
-                        height: 25em;
+                    .flex {
+                        order: 2;
                     }
                 }
             }

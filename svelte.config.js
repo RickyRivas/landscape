@@ -4,11 +4,6 @@ import netlify from '@sveltejs/adapter-netlify';
 const config = {
 	kit: {
 	adapter: netlify({ edge: true }),
-
-		// Override http methods in the Todo forms
-		methodOverride: {
-			allowed: ['PATCH', 'DELETE']
-		}
 	}
 };
 

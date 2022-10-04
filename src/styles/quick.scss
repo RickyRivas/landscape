@@ -100,7 +100,7 @@
                     &::after {
                         content: '';
                         width: 2em;
-                        background-color: var(--accent-color);
+                        background: linear-gradient(to right, var(--accent-color) 0%, var(--accent-color) 74%, rgba(255, 255, 255, 0) 74%, rgba(255, 255, 255, 0) 87%, var(--accent-color) 87%);
                         height: 4px;
                         margin: .5em 0 1em;
                         display: flex;
@@ -265,7 +265,7 @@
                     &::after {
                         content: '';
                         width: 2em;
-                        background-color: var(--accent-color);
+                        background: linear-gradient(to right, var(--accent-color) 0%, var(--accent-color) 74%, rgba(255, 255, 255, 0) 74%, rgba(255, 255, 255, 0) 87%, var(--accent-color) 87%);
                         height: 4px;
                         margin: .5em 0 1em;
                         display: flex;

@@ -6,7 +6,7 @@
     --secondary-color: #d0dde9;
     --tertiary-color: #edf0f8;
     --accent-color: #2A7D2E;
-    --heading-color: rgba(0, 0, 0, 0.7);
+    --heading-color: rgba(0, 0, 0, 0.9);
     --text-color: #444444;
     --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -26,6 +26,7 @@ html {
     }
 
     @media screen and (min-width: 64em) {
+        overflow: hidden;
         overflow-y: scroll;
     }
 
@@ -94,7 +95,7 @@ button {
     color: white;
     text-decoration: none;
     margin: .5em;
-    border-radius: .5em;
+    border-radius: .1em;
     transition: all .5s;
 
     &:hover {

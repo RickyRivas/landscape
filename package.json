@@ -25,6 +25,7 @@
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.5.0",
 		"cookie": "^0.4.1",
-		"sass": "^1.54.5"
+		"sass": "^1.54.5",
+		"swiper": "^8.4.2"
 	}
 }

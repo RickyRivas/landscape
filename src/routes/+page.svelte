@@ -3,6 +3,14 @@
 	import SubFooter from '../lib/header/SubFooter.svelte';
 	import '../styles/pages/home.scss';
 	import '../styles/quick.scss';
+	import '../styles/pages/old.scss';
+	// Swiperjs
+	import { Swiper, SwiperSlide } from 'swiper/svelte';
+	import 'swiper/css';
+	import 'swiper/css/navigation';
+	import 'swiper/css/scrollbar';
+	import 'swiper/css/pagination';
+	import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 </script>
 
 <svelte:head>
@@ -174,7 +182,7 @@
 			<div class="img-container">
 				<img
 					class=""
-					src="/home/about.webp"
+					src="/home/lawn01.jpg"
 					alt="Owner"
 					width="500"
 					height="750"
@@ -187,15 +195,62 @@
 	<!-- ============================================ -->
 	<!--                 Services                     -->
 	<!-- ============================================ -->
-	<img
-		class="main-img"
-		src="/home/servicemain.jpg"
-		alt="beautiful landscape"
-		width="1920"
-		height="1100"
-		loading="lazy"
-		decoding="async"
-	/>
+	<section class="main-slider">
+		<Swiper
+			modules={[Navigation, Autoplay, Scrollbar]}
+			navigation={{
+				prevEl: '.swiper-prev-custom',
+				nextEl: '.swiper-next-custom'
+			}}
+			autoplay={{
+				delay: 10000
+			}}
+			scrollbar={{
+				hide: false
+			}}
+			class="swiper swiper-container swiper-main"
+			spaceBetween={0}
+			slidesPerView={1}
+			loop={false}
+		>
+			<SwiperSlide class="swiper-slide">
+				<img
+					class="main-img"
+					src="/home/servicemain.jpg"
+					alt="beautiful landscape"
+					width="1920"
+					height="1100"
+					loading="lazy"
+					decoding="async"
+				/>
+			</SwiperSlide>
+			<SwiperSlide class="swiper-slide">
+				<img
+					class="main-img"
+					src="/home/lawn02.jpg"
+					alt="beautiful landscape"
+					width="1920"
+					height="1100"
+					loading="lazy"
+					decoding="async"
+				/>
+			</SwiperSlide>
+			<SwiperSlide class="swiper-slide">
+				<img
+					class="main-img"
+					src="/home/lawn03.jpg"
+					alt="beautiful landscape"
+					width="1920"
+					height="1100"
+					loading="lazy"
+					decoding="async"
+				/>
+			</SwiperSlide>
+		</Swiper>
+	</section>
+	<!-- divider -->
+	<!-- divider -->
+	<!-- divider -->
 	<section id="services">
 		<div class="header">
 			<h2>Residential<br /> Landscaping Services</h2>
@@ -277,11 +332,11 @@
 			<h2>Some of<br /> Our Latest Projects</h2>
 		</div>
 		<div class="grid">
-			<div class="col">
+			<div class="box">
 				<div class="item">
 					<img
 						class=""
-						src="/portfolio/img01.webp"
+						src="/home/lawn01.jpg"
 						width=""
 						height=""
 						alt=""
@@ -292,7 +347,7 @@
 				<div class="item">
 					<img
 						class=""
-						src="/portfolio/img02.webp"
+						src="/home/lawn02.jpg"
 						width=""
 						height=""
 						alt=""
@@ -303,31 +358,7 @@
 				<div class="item">
 					<img
 						class=""
-						src="/portfolio/img03.webp"
-						width=""
-						height=""
-						alt=""
-						loading="lazy"
-						decoding="async"
-					/>
-				</div>
-			</div>
-			<div class="col">
-				<div class="item">
-					<img
-						class=""
-						src="/portfolio/img02.webp"
-						width=""
-						height=""
-						alt=""
-						loading="lazy"
-						decoding="async"
-					/>
-				</div>
-				<div class="item">
-					<img
-						class=""
-						src="/portfolio/img01.webp"
+						src="/home/lawn03.jpg"
 						width=""
 						height=""
 						alt=""
@@ -347,7 +378,32 @@
 					/>
 				</div>
 			</div>
-			<div class="col">
+			<div class="box mid">
+				<a href="/portfolio" class="item">
+					<img
+						class=""
+						src="/home/lawn01.jpg"
+						width=""
+						height=""
+						alt=""
+						loading="lazy"
+						decoding="async"
+					/>
+					<p>View Entire Portfolio</p>
+				</a>
+			</div>
+			<div class="box">
+				<div class="item">
+					<img
+						class=""
+						src="/home/lawn02.jpg"
+						width=""
+						height=""
+						alt=""
+						loading="lazy"
+						decoding="async"
+					/>
+				</div>
 				<div class="item">
 					<img
 						class=""
@@ -362,7 +418,7 @@
 				<div class="item">
 					<img
 						class=""
-						src="/portfolio/img02.webp"
+						src="/home/lawn03.jpg"
 						width=""
 						height=""
 						alt=""
@@ -373,7 +429,7 @@
 				<div class="item">
 					<img
 						class=""
-						src="/portfolio/img03.webp"
+						src="/home/lawn01.jpg"
 						width=""
 						height=""
 						alt=""
@@ -385,80 +441,104 @@
 		</div>
 	</section>
 	<!-- ============================================ -->
-	<!--                 misc                          -->
+	<!--                 misc/test                    -->
 	<!-- ============================================ -->
-	<div id="misc">
+	<section id="test">
 		<div class="container">
 			<div class="item">
-				<h2>
-					<span>30</span> Years
-				</h2>
+				<h2><span>30</span>Years</h2>
 				<p>Experienced professionals who know how to build long-lasting landscaping solutions.</p>
 			</div>
 			<div class="item">
-				<h2>
-					<span>Local</span> Business
-				</h2>
+				<h2><span>Local</span>Business</h2>
 				<p>
 					Lawncare has been trusted and highly rated in the state for years, and for good reason.
 				</p>
 			</div>
 			<div class="item">
-				<h2>
-					<span>15</span> Workers
-				</h2>
+				<h2><span>30</span>Workers</h2>
 				<p>
 					No job is too big or small for Lawncare. No matter your needs, we can cover them
-					flawlessly
+					flawlessly.
 				</p>
 			</div>
 		</div>
-	</div>
-	<!-- ============================================ -->
-	<!--                 Testimonials                 -->
-	<!-- ============================================ -->
-	<section id="test">
-		<div class="container">
-			<div class="header">
-				<h2>What Our Clients Say</h2>
-			</div>
-			<div class="items">
-				{#each subReviews as { review, testifier }}
-					<div class="item">
-						<div class="stars">
-							{#each { length: 5 } as _}
-								<svg
-									width="30"
-									height="30"
-									viewBox="0 0 30 30"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-									aria-hidden="true"
-									role="img"
-								>
-									<path
-										d="M30 11.5908L19.0993 10.8741L14.994 0.560669L10.8888 10.8741L0 11.5908L8.3516 18.6821L5.61105 29.4393L14.994 23.5084L24.3771 29.4393L21.6365 18.6821L30 11.5908Z"
-										fill="currentcolor"
-									/>
-								</svg>
-							{/each}
-						</div>
-						<p>
-							{review}
-						</p>
-						<div class="info">
-							<img src="/reviews/user.svg" alt="testifier" width="40" height="40" />
-							<div>
-								<h4>{testifier}</h4>
-								<p>Homeowner</p>
-							</div>
-						</div>
-					</div>
-				{/each}
-			</div>
-			<a class="btn" href="/testimonials">View All Reviews</a>
-		</div>
 	</section>
+	<div id="why-over">
+		<div class="img-container">
+			<picture>
+				<source media="(max-width: 600px)" srcset="/img09.webp" />
+				<source media="(min-width: 601px)" srcset="/img09.webp" />
+				<img
+					aria-hidden="true"
+					decoding="async"
+					src="/img09.webp"
+					alt=""
+					width="276"
+					height="132"
+				/>
+			</picture>
+		</div>
+		<div class="text">
+			<h2>Client Reviews</h2>
+			<Swiper
+				modules={[Navigation, Autoplay]}
+				navigation={{
+					prevEl: '.swiper-prev-custom',
+					nextEl: '.swiper-next-custom'
+				}}
+				autoplay={{
+					delay: 10000
+				}}
+				class="swiper swiper-container"
+				spaceBetween={0}
+				slidesPerView={1}
+				loop={true}
+			>
+				{#each subReviews as { review, testifier }}
+					<SwiperSlide class="swiper-slide"
+						><div class="swiper-content">
+							<div class="stars">
+								{#each { length: 5 } as _}
+									<svg
+										width="30"
+										height="30"
+										viewBox="0 0 30 30"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+										aria-hidden="true"
+										role="img"
+									>
+										<path
+											d="M30 11.5908L19.0993 10.8741L14.994 0.560669L10.8888 10.8741L0 11.5908L8.3516 18.6821L5.61105 29.4393L14.994 23.5084L24.3771 29.4393L21.6365 18.6821L30 11.5908Z"
+											fill="currentcolor"
+										/>
+									</svg>
+								{/each}
+							</div>
+							<p>
+								{review}
+							</p>
+							<div class="info">
+								<img src="/avatar.svg" alt="person icon" width="40" height="40" />
+								<div>
+									<h4>{testifier}</h4>
+									<p>Certified Google Review</p>
+								</div>
+							</div>
+						</div></SwiperSlide
+					>
+				{/each}
+			</Swiper>
+
+			<div class="swiper-next-custom">
+				<img src="/right-chevron.svg" alt="" />
+			</div>
+			<div class="swiper-prev-custom">
+				<img src="/left-chevron.svg" alt="" />
+			</div>
+		</div>
+	</div>
 </main>
 <!-- ============================================ -->
 <!--                 SubFooter                    -->

@@ -65,10 +65,113 @@
 				repellendus in id. Consectetur placeat quis dolores voluptatem quibusdam?
 			</p>
 			<div class="btns">
-				<a href="/">Contact Us</a>
+				<a href="/" class="btn">Contact Us</a>
 			</div>
 		</div>
 	</div>
+	<section id="process">
+		<div class="header">
+			<h2>Get Things Done<br />With Our Proven Process</h2>
+		</div>
+		<div class="contain">
+			<div class="block">
+				<div class="graphic" data-count="1">
+					<img
+						class=""
+						src="/img10m.webp"
+						alt=""
+						width="500"
+						height="500"
+						loading="lazy"
+						decoding="async"
+					/>
+				</div>
+				<div class="content">
+					<h3>Consultation</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis earum magnam temporibus
+						doloribus velit soluta placeat totam officia provident qui quas architecto quae rerum,
+						cumque voluptas delectus explicabo in nobis. Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. Praesentium at sunt ea assumenda obcaecati tempora placeat minus
+						aperiam, fugiat, hic aut, dignissimos maxime repellendus in laboriosam itaque? Ad,
+						beatae fugit.
+					</p>
+				</div>
+			</div>
+			<div class="block">
+				<div class="graphic" data-count="2">
+					<img
+						class=""
+						src="/img09.jpeg"
+						alt=""
+						width="500"
+						height="500"
+						loading="lazy"
+						decoding="async"
+					/>
+				</div>
+				<div class="content">
+					<h3>Design</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis earum magnam temporibus
+						doloribus velit soluta placeat totam officia provident qui quas architecto quae rerum,
+						cumque voluptas delectus explicabo in nobis. Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. Praesentium at sunt ea assumenda obcaecati tempora placeat minus
+						aperiam, fugiat, hic aut, dignissimos maxime repellendus in laboriosam itaque? Ad,
+						beatae fugit.
+					</p>
+				</div>
+			</div>
+			<div class="block">
+				<div class="graphic" data-count="3">
+					<img
+						class=""
+						src="/home/lawn02.jpg"
+						alt=""
+						width="500"
+						height="500"
+						loading="lazy"
+						decoding="async"
+					/>
+				</div>
+				<div class="content">
+					<h3>Build</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis earum magnam temporibus
+						doloribus velit soluta placeat totam officia provident qui quas architecto quae rerum,
+						cumque voluptas delectus explicabo in nobis. Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. Praesentium at sunt ea assumenda obcaecati tempora placeat minus
+						aperiam, fugiat, hic aut, dignissimos maxime repellendus in laboriosam itaque? Ad,
+						beatae fugit.
+					</p>
+				</div>
+			</div>
+			<div class="block">
+				<div class="graphic" data-count="4">
+					<img
+						class=""
+						src="/home/lawn03.jpg"
+						alt=""
+						width="500"
+						height="500"
+						loading="lazy"
+						decoding="async"
+					/>
+				</div>
+				<div class="content">
+					<h3>Maintain</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis earum magnam temporibus
+						doloribus velit soluta placeat totam officia provident qui quas architecto quae rerum,
+						cumque voluptas delectus explicabo in nobis. Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. Praesentium at sunt ea assumenda obcaecati tempora placeat minus
+						aperiam, fugiat, hic aut, dignissimos maxime repellendus in laboriosam itaque? Ad,
+						beatae fugit.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
 </main>
 <!-- ============================================ -->
 <!--                 subfoot                      -->

@@ -14,6 +14,39 @@
 <svelte:window bind:scrollY={y} />
 <!-- Navigation Start -->
 <header class={y >= 100 ? 'scroll' : ''}>
+	<div class="top">
+		<div class="container">
+			<div class="box">
+				<a href="/contact">
+					<img class="" src="/phone.svg" alt="" width="20" height="20" decoding="async" />
+					+1 (918) 123 - 4567
+				</a>
+				<a href="/contact">
+					<img class="" src="/clock.svg" alt="" width="20" height="20" decoding="async" />
+					Mon - Fri: 10am - 5pm
+				</a>
+				<a href="/contact">
+					<img class="" src="/email.svg" alt="" width="20" height="20" decoding="async" />
+					info@business.com
+				</a>
+			</div>
+			<div class="box social">
+				<a href="/contact">
+					<img class="" src="/social/facebook.svg" alt="" width="20" height="20" decoding="async" />
+				</a>
+				<a href="/contact">
+					<img
+						class=""
+						src="/social/instagram.svg"
+						alt=""
+						width="20"
+						height="20"
+						decoding="async"
+					/>
+				</a>
+			</div>
+		</div>
+	</div>
 	<nav>
 		<a href="/" class="logo">
 			<svg
@@ -31,51 +64,52 @@
 				/>
 			</svg>
 		</a>
-
-		<ul class="links {isActive ? 'is-active' : ''}">
-			<li class:active={$page.url.pathname === '/'} class="link">
-				<a href="/" on:click={toggle}>Home</a>
-			</li>
-			<li class:active={$page.url.pathname === '/testimonials'} class="link">
-				<a href="/testimonials" on:click={toggle}>Testimonials</a>
-			</li>
-			<li class:active={$page.url.pathname === '/portfolio'} class="link">
-				<a href="/portfolio" on:click={toggle}>Portfolio</a>
-			</li>
-			<li class:active={$page.url.pathname === '/about'} class="link">
-				<a href="/about" on:click={toggle}>About</a>
-			</li>
-			<li class:active={$page.url.pathname === '/contact'} class="link">
-				<a href="/contact" on:click={toggle}>Contact</a>
-			</li>
-			<li class="link social">
-				<a href="/">
-					<img
-						class=""
-						src="/social/instagram.svg"
-						alt="instagram"
-						width="25"
-						height="25"
-						loading="lazy"
-						decoding="async"
-					/>
-					<p>Instagram</p>
-				</a>
-				<a href="/">
-					<img
-						class=""
-						src="/social/facebook.svg"
-						alt="facebook"
-						width="25"
-						height="25"
-						loading="lazy"
-						decoding="async"
-					/>
-					<p>Facebook</p>
-				</a>
-			</li>
-		</ul>
-
+		<div class="flex">
+			<ul class="links {isActive ? 'is-active' : ''}">
+				<li class:active={$page.url.pathname === '/'} class="link">
+					<a href="/" on:click={toggle}>Home</a>
+				</li>
+				<li class:active={$page.url.pathname === '/testimonials'} class="link">
+					<a href="/testimonials" on:click={toggle}>Testimonials</a>
+				</li>
+				<li class:active={$page.url.pathname === '/portfolio'} class="link">
+					<a href="/portfolio" on:click={toggle}>Portfolio</a>
+				</li>
+				<li class:active={$page.url.pathname === '/about'} class="link">
+					<a href="/about" on:click={toggle}>About</a>
+				</li>
+				<li class:active={$page.url.pathname === '/contact'} class="link">
+					<a href="/contact" on:click={toggle}>Contact</a>
+				</li>
+				<li class="link social">
+					<a href="/">
+						<img
+							class=""
+							src="/social/instagram.svg"
+							alt="instagram"
+							width="25"
+							height="25"
+							loading="lazy"
+							decoding="async"
+						/>
+						<p>Instagram</p>
+					</a>
+					<a href="/">
+						<img
+							class=""
+							src="/social/facebook.svg"
+							alt="facebook"
+							width="25"
+							height="25"
+							loading="lazy"
+							decoding="async"
+						/>
+						<p>Facebook</p>
+					</a>
+				</li>
+			</ul>
+			<a href="/contact" class="btn">Consultation</a>
+		</div>
 		<button
 			class="hamburger hamburger--squeeze {isActive ? 'is-active' : ''}"
 			aria-label="toggle"
