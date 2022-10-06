@@ -33,8 +33,8 @@
 				<li class:active={$page.url.pathname === '/'} class="link">
 					<a href="/">Home</a>
 				</li>
-				<li class:active={$page.url.pathname === '/testimonials'} class="link">
-					<a href="/testimonials">Testimonials</a>
+				<li class:active={$page.url.pathname === '/services'} class="link">
+					<a href="/services">Services</a>
 				</li>
 				<li class:active={$page.url.pathname === '/portfolio'} class="link">
 					<a href="/portfolio">Portfolio</a>
