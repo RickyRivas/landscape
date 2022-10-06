@@ -69,8 +69,8 @@
 				<li class:active={$page.url.pathname === '/'} class="link">
 					<a href="/" on:click={toggle}>Home</a>
 				</li>
-				<li class:active={$page.url.pathname === '/testimonials'} class="link">
-					<a href="/testimonials" on:click={toggle}>Testimonials</a>
+				<li class:active={$page.url.pathname === '/services'} class="link">
+					<a href="/services" on:click={toggle}>Services</a>
 				</li>
 				<li class:active={$page.url.pathname === '/portfolio'} class="link">
 					<a href="/portfolio" on:click={toggle}>Portfolio</a>

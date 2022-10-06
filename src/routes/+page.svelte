@@ -253,7 +253,7 @@
 	<!-- divider -->
 	<section id="services">
 		<div class="header">
-			<h2>Residential<br /> Landscaping Services</h2>
+			<h2>Our<br /> Featured Services</h2>
 			<p>
 				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem incidunt eius nihil, commodi
 				reiciendis at aperiam voluptatibus fuga doloremque, aspernatur quam, perferendis hic. Iusto
@@ -261,25 +261,39 @@
 			</p>
 		</div>
 		<div class="container">
-			{#each mainServices as { title, description, iconPath }}
+			{#each mainServices as { title, description, iconPath, imageUrl }}
 				<div class="item">
-					<img
-						class=""
-						src={iconPath}
-						alt="icon"
-						width="40"
-						height="40"
-						loading="lazy"
-						decoding="async"
-					/>
-					<h3>{title}</h3>
-					<p>
-						{description}
-					</p>
-					<a class="link" href="/contact">Request Quote</a>
+					<div class="head">
+						<img
+							class=""
+							src={imageUrl}
+							alt=""
+							width="500"
+							height="500"
+							loading="lazy"
+							decoding="async"
+						/>
+					</div>
+					<div class="body">
+						<div class="abs">
+							<img
+								class=""
+								src={iconPath}
+								alt="icon"
+								width="40"
+								height="40"
+								loading="lazy"
+								decoding="async"
+							/>
+						</div>
+						<h3>{title}</h3>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, aliquam.</p>
+						<a class="link" href="/services/{title}">Learn More</a>
+					</div>
 				</div>
 			{/each}
 		</div>
+		<a href="/services" id="cta" class="btn">View All Services</a>
 	</section>
 	<!-- ============================================ -->
 	<!--                 Why Choose Us                -->

@@ -77,30 +77,53 @@ export let services = [
     },
 ]
 // Main services section
-export let mainServices = [
+export let allServices = [
     {
+        id: 1,
         title: 'Design Concept Assistance',
         description: 'Our 3 decades of experience give us enough knowledge of the science that goes behind landscaping, which is why we can help you make use of the space you have in the most practical, cost-effective, and aesthetically-pleasing way.',
-        iconPath: '/home/planning.svg'
+        iconPath: '/home/planning.svg',
+        imageUrl: '/home/lawn02.jpg'
     },
     {
-        title: 'Tree, Shrub, And Plant Installation',
+        id: 2,
+        title: 'Landscaping',
         description: `Whether you need 1 tree installed in your backyard for a new treehouse, or you're looking to surround a large property with plants hand-picked to suit your needs and general theme, Lawncare can guarantee flawless installation on a timeframe you can trust.`,
-        iconPath: '/home/plant.svg'
+        iconPath: '/home/plant.svg',
+        imageUrl: '/home/lawn01.jpg'
     },
     {
-        title: 'New Grass And Sod Installation',
+        id: 3,
+        title: 'Maintenance',
         description: `No matter how large or small your lawn is, we can help you cover it completely with high-quality sod sourced from the best suppliers in the country, guaranteeing the exact results you're after, brought to life by our Lawncare professionals.`,
-        iconPath: '/home/plant-pot.svg'
+        iconPath: '/home/plant-pot.svg',
+        imageUrl: '/home/lawn03.jpg'
     },
     {
-        title: 'Driveways, Patios, And Walkways',
+        id: 4,
+        title: 'Fertilaztion & Weed Control',
         description: `If you're looking for pathways, driveways, and walkways that last a lifetime without any cracks, splits, or fading in sight, Lawncare is where you need to be. We help you find the right choices for your needs and carry out the installation process, all without disrupting your day-to-day routine.`,
-        iconPath: '/home/brick-wall.svg'
-    }
+        iconPath: '/home/brick-wall.svg',
+          imageUrl: '/img10.webp'
+    },
+    {
+        id: 5,
+        title: 'Irrigation & Drainage',
+        description: `If you're looking for pathways, driveways, and walkways that last a lifetime without any cracks, splits, or fading in sight, Lawncare is where you need to be. We help you find the right choices for your needs and carry out the installation process, all without disrupting your day-to-day routine.`,
+        iconPath: '/home/brick-wall.svg',
+          imageUrl: '/home/lawn02.jpg'
+    },
+    {
+        id: 6,
+        title: 'Outdoor & Holiday Lighting',
+        description: `If you're looking for pathways, driveways, and walkways that last a lifetime without any cracks, splits, or fading in sight, Lawncare is where you need to be. We help you find the right choices for your needs and carry out the installation process, all without disrupting your day-to-day routine.`,
+        iconPath: '/home/brick-wall.svg',
+          imageUrl: '/img08m.webp'
+    },
 ]
 // Why 
-
+export let mainServices = []
+mainServices.push(allServices[0], allServices[1], allServices[3])
 export let reasons = [
     {
         title: 'Quality',
