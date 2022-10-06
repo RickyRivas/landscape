@@ -551,6 +551,7 @@
 			<div class="swiper-prev-custom">
 				<img src="/left-chevron.svg" alt="" />
 			</div>
+			<a href="/" class="btn">Leave a review</a>
 		</div>
 	</div>
 </main>

@@ -14,7 +14,7 @@
 </svelte:head>
 
 <SubHeader {pageTitle} />
-<main id="services">
+<main id="services-int">
 	<div class="header">
 		<h2>Lorem ipsum dolor sit amet.</h2>
 		<p>

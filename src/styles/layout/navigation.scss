@@ -123,12 +123,20 @@ header {
                 color: #000;
                 font-size: .8em;
 
-                img {
-                    width: 1em;
-                    height: 1em;
+                .circle {
+                    background-color: var(--accent-color);
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     margin-right: .2em;
-                }
+                    padding: .2em;
 
+                    img {
+                        width: .75em;
+                        height: .75em;
+                    }
+                }
 
                 margin-right: 1em;
 

@@ -18,15 +18,21 @@
 		<div class="container">
 			<div class="box">
 				<a href="/contact">
-					<img class="" src="/phone.svg" alt="" width="20" height="20" decoding="async" />
+					<div class="circle">
+						<img class="" src="/phone.svg" alt="" width="20" height="20" decoding="async" />
+					</div>
 					+1 (918) 123 - 4567
 				</a>
 				<a href="/contact">
-					<img class="" src="/clock.svg" alt="" width="20" height="20" decoding="async" />
+					<div class="circle">
+						<img class="" src="/clock.svg" alt="" width="20" height="20" decoding="async" />
+					</div>
 					Mon - Fri: 10am - 5pm
 				</a>
 				<a href="/contact">
-					<img class="" src="/email.svg" alt="" width="20" height="20" decoding="async" />
+					<div class="circle">
+						<img class="" src="/email.svg" alt="" width="20" height="20" decoding="async" />
+					</div>
 					info@business.com
 				</a>
 			</div>
