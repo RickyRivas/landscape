@@ -54,25 +54,127 @@
 	<!-- ============================================ -->
 	<section id="mini-services">
 		<div class="container">
-			{#each services as { name, description }, i}
-				<div class="item">
-					<div class="icon">
-						<img
-							class=""
-							src="/home/0{i + 1}.svg"
-							alt=""
-							width="100"
-							height="100"
-							loading="lazy"
-							decoding="async"
-						/>
-					</div>
-					<h2>{name}</h2>
-					<p>
-						{description}
-					</p>
+			<div class="box">
+				<div class="content">
+					<h2>Residential</h2>
+					<ul>
+						<li>
+							<img
+								class=""
+								src="/right-chevron.svg"
+								alt="arrow"
+								width="12"
+								height="12"
+								decoding="async"
+							/>
+							Service One
+						</li>
+						<li>
+							<img
+								class=""
+								src="/right-chevron.svg"
+								alt="arrow"
+								width="12"
+								height="12"
+								decoding="async"
+							/>
+							Service Two
+						</li>
+						<li>
+							<img
+								class=""
+								src="/right-chevron.svg"
+								alt="arrow"
+								width="12"
+								height="12"
+								decoding="async"
+							/>Service Three
+						</li>
+						<li>
+							<img
+								class=""
+								src="/right-chevron.svg"
+								alt="arrow"
+								width="12"
+								height="12"
+								decoding="async"
+							/>Service Four
+						</li>
+						<li>
+							<img
+								class=""
+								src="/right-chevron.svg"
+								alt="arrow"
+								width="12"
+								height="12"
+								decoding="async"
+							/>Service Five
+						</li>
+					</ul>
 				</div>
-			{/each}
+			</div>
+			<div class="box">
+				<div class="content">
+					<h2>Commercial</h2>
+					<ul>
+						<li>
+							<img
+								class=""
+								src="/right-chevron.svg"
+								alt="arrow"
+								width="12"
+								height="12"
+								decoding="async"
+							/>
+							Service One
+						</li>
+						<li>
+							<img
+								class=""
+								src="/right-chevron.svg"
+								alt="arrow"
+								width="12"
+								height="12"
+								decoding="async"
+							/>
+							Service Two
+						</li>
+						<li>
+							<img
+								class=""
+								src="/right-chevron.svg"
+								alt="arrow"
+								width="12"
+								height="12"
+								decoding="async"
+							/>
+							Service Three
+						</li>
+						<li>
+							<img
+								class=""
+								src="/right-chevron.svg"
+								alt="arrow"
+								width="12"
+								height="12"
+								decoding="async"
+							/>
+							Service Four
+						</li>
+						<li>
+							<img
+								class=""
+								src="/right-chevron.svg"
+								alt="arrow"
+								width="12"
+								height="12"
+								decoding="async"
+							/>
+							Service Five
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</section>
 	<!-- ============================================ -->
