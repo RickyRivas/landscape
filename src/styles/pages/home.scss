@@ -12,23 +12,20 @@ main#home {
         background-color: var(--light-gray);
         position: relative;
 
-        @media (min-width: 768px) {
-            min-height: 900px;
-        }
 
         @media only screen and (max-width: 47.975em) {
-            font-size: .9em;
+            font-size: 1em;
             /* mintab 480w */
         }
 
         @media only screen and (min-width: 48em) {
-            font-size: 1.7vw;
+            font-size: 1em;
+            min-height: calc(1000/20) * 1em;
             /* mintab 480w */
         }
 
         @media only screen and (min-width: 64em) {
             font-size: inherit;
-            min-height: calc(1000/20) * 1em;
         }
 
         .content {
@@ -40,7 +37,7 @@ main#home {
             flex-direction: column;
             text-align: center;
             width: 100%;
-            max-width: 800px;
+            max-width: calc(800/20)*1em;
             // margin-top: 45%;
             margin: auto 0;
             padding: .5em;
@@ -137,7 +134,7 @@ main#home {
 
 
         @media only screen and (max-width: 47.975em) {
-            font-size: .9em;
+            font-size: .85em;
             /* mintab 480w */
         }
 
@@ -513,6 +510,7 @@ main#home {
         flex-direction: column;
         padding: 3em .5em;
         background-color: #eaefe4;
+        overflow: hidden;
 
         @media only screen and (max-width: 47.975em) {
             font-size: 3.2vw;

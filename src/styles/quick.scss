@@ -7,7 +7,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
             width: 100%;
             // 1300px
             // max-width: 65em;
@@ -16,10 +15,11 @@
 
             @media only screen and (max-width: 47.975em) {
                 font-size: 1em;
+                flex-direction: column;
             }
 
             @media only screen and (min-width: 48em) {
-                font-size: 1.7vw;
+                font-size: 1.45vw;
             }
 
             @media only screen and (min-width: 64em) {
@@ -28,6 +28,7 @@
                 font-size: 1.3vw;
                 padding: 8em 0;
                 position: relative;
+                font-size: inherit;
 
                 // large tree
                 &::before {
@@ -45,16 +46,13 @@
                 }
             }
 
-            @media only screen and (min-width: 1200px) {
-                font-size: inherit;
-            }
 
             .img-container {
                 display: block;
                 position: relative;
                 margin: 0 0 2em 0;
 
-                @media only screen and (min-width: 64em) {
+                @media only screen and (min-width: 48em) {
                     margin: 0 5em 0 0;
                 }
 
@@ -157,7 +155,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
             width: 100%;
             // 1300px
             max-width: calc(1300/20) * 1em;
@@ -167,10 +164,11 @@
 
             @media only screen and (max-width: 47.975em) {
                 font-size: 1em;
+                flex-direction: column;
             }
 
             @media only screen and (min-width: 48em) {
-                font-size: 1.7vw;
+                font-size: 1.45vw;
             }
 
             @media only screen and (min-width: 64em) {
@@ -200,7 +198,7 @@
                 font-size: inherit;
             }
 
-            @media only screen and (max-width: 1023px) {
+            @media only screen and (max-width: 47.975em) {
                 .img-container {
                     order: 1;
                 }
@@ -246,11 +244,11 @@
                 padding: 1em;
                 margin: 0 0 2em 0;
 
-                @media only screen and (min-width: 64em) {
+                @media only screen and (min-width: 48em) {
                     margin: 0 5em 0 0;
                 }
 
-                @media only screen and (min-width: 64em) {
+                @media only screen and (min-width: 48em) {
                     padding: 0;
                 }
 

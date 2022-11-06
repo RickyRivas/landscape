@@ -4,7 +4,6 @@ main#about {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
         width: 100%;
         max-width: calc(1200/20)*1em;
         margin: auto;
@@ -12,10 +11,11 @@ main#about {
 
         @media only screen and (max-width: 47.975em) {
             font-size: 3.2vw;
+            flex-direction: column;
         }
 
         @media only screen and (min-width: 48em) {
-            font-size: 1.7vw;
+            font-size: 1.45vw;
         }
 
         @media only screen and (min-width: 64em) {
@@ -33,7 +33,7 @@ main#about {
             position: relative;
             margin: 0 0 2em 0;
 
-            @media only screen and (min-width: 64em) {
+            @media only screen and (min-width: 48em) {
                 margin: 0 3em 0 0;
             }
 
