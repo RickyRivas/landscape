@@ -9,13 +9,15 @@
 <footer>
 	<div class="container">
 		<div class="item">
-			<a class="logo" href="/">
+			<a class="logo" href="/" aria-label="Logo">
 				<svg
 					width="352"
 					height="71"
 					viewBox="0 0 352 71"
 					fill="currentcolor"
 					xmlns="http://www.w3.org/2000/svg"
+					aria-hidden="true"
+					role="img"
 				>
 					<path
 						fill-rule="evenodd"
