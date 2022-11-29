@@ -98,6 +98,6 @@
 <div class="credit">
 	<p>
 		©2022 {businessInfo.companyName}.<br /> Custom coded and designed By
-		<a href="/">Rivas Web Designs</a>
+		<a href="/">RWD</a>
 	</p>
 </div>

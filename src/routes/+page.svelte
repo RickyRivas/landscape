@@ -196,10 +196,9 @@
 			<div class="content">
 				<h2>Landscaping Experts With An Eye For Aesthetics And Practicality.</h2>
 				<p>
-					Based in Tulsa, Oklahoma, Lawncare started as a step up for the landscaping services in
-					the area as a whole. Fast forward to 30 years, and today we stand as one of the
-					highest-rated landscapers in the state, giving every client solutions that fit their needs
-					like a glove
+					Based in Dallas, Texas Lawncare started as a step up for the landscaping services in the
+					area as a whole. Fast forward to 30 years, and today we stand as one of the highest-rated
+					landscapers in the state, giving every client solutions that fit their needs like a glove
 				</p>
 				<p>
 					Our priorities are efficiency, safety, and quality, if these 3 boxes aren’t checked off,
@@ -243,7 +242,7 @@
 	<section id="layout02">
 		<div class="container">
 			<div class="content">
-				<h2>Trusted Landscapers for Tulsa for over 20 years</h2>
+				<h2>Trusted Landscapers for Dallas for over 20 years</h2>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quae quo, earum a nobis
 					officiis maiores natus hic omnis corrupti minima eius eaque odio, placeat ad vero magnam
